@@ -1,0 +1,122 @@
+﻿@model  Dominio.Clinica.Entidades.Paciente
+
+@{
+    ViewBag.Title = "drop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>drop</h2>
+
+
+<h2>Cadastro</h2>
+@using (Html.BeginForm("Create", "Paciente", new
+{
+
+
+
+}, FormMethod.Post))
+{
+
+
+    @Html.AntiForgeryToken()
+
+
+    <fieldset>
+        <legend>Novo Recurso</legend>
+
+        <div class="col-lg-2">
+            <label class="control-label input-sm">Insumo</label>
+            <select class="form-control input-sm" id="selectInsumo" name="selectInsumo" required>
+                <option selected="selected" value="">Efetue a busca</option>
+            </select>
+        </div>
+
+
+        @*@Html.LabelFor(model => model.IdPaciente, "CidadeID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(e => e.IdPaciente, ViewData["Cidades"]  as IEnumerable<SelectListItem>, "Selecione")
+            @Html.ValidationMessageFor(e => e.IdPaciente)
+        </div>*@
+
+
+        <div>
+            @Html.LabelFor(model => model.IdPaciente)
+            @Html.DropDownListFor(model => model.IdPaciente, Model.AvailableCountries)
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.nome)
+                    @Html.TextBoxFor(model => model.nome, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.nome)
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.estado)
+                    @Html.TextBoxFor(model => model.estado, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.estado)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.cidade)
+                    @Html.TextBoxFor(model => model.cidade, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.cidade)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.email)
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.email)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.numsus)
+                    @Html.TextBoxFor(model => model.numsus, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.numsus)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.telefone)
+                    @Html.TextBoxFor(model => model.telefone, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.telefone)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.cpf)
+                    @Html.TextBoxFor(model => model.cpf, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.cpf)
+                </div>
+
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </fieldset>
+
+}

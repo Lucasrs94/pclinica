@@ -1,0 +1,96 @@
+﻿@model  Aplicao.Clinica.PacienteForm.FormPaciente
+@{
+    ViewBag.Title = "Cadastro";
+
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cadastro</h2>
+@using (Html.BeginForm("Create", "Paciente",
+                            new { },
+                            FormMethod.Post))
+{
+
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Novo Recurso</legend>
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.nome)
+                    @Html.TextBoxFor(model => model.nome, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.nome)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.estado)
+                    @Html.TextBoxFor(model => model.estado, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.estado)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.cidade)
+                    @Html.TextBoxFor(model => model.cidade, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.cidade)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.email)
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.email)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.numsus)
+                    @Html.TextBoxFor(model => model.numsus, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.numsus)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.telefone)
+                    @Html.TextBoxFor(model => model.telefone, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.telefone)
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.cpf)
+                    @Html.TextBoxFor(model => model.cpf, new { @class = "form-control", style = "width: 50%" })
+                    @Html.ValidationMessageFor(model => model.cpf)
+                </div>
+
+            </div>
+        </div>
+
+      <button type="submit" class="btn btn-success">Enviar</button>
+            </fieldset>
+
+                }

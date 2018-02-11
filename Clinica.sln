@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Aplicacao", "0-Aplicacao", "{23918C0D-37D8-411A-9089-4B68AE0D9490}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Infra", "2-Infra", "{48E9847F-391A-4B59-B973-4968F47DC83B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicao.Clinica", "Aplicao.Clinica\Aplicao.Clinica.csproj", "{5A61B845-8065-4366-99D8-7723697366CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Dominio", "1-Dominio", "{5360290B-B77A-4D3C-89ED-FD83141EE97E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio.Clinica", "Dominio.Clinica\Dominio.Clinica.csproj", "{386A06B5-3A82-437C-AE2F-7F0F67406F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Clinica", "Infra.Clinica\Infra.Clinica.csproj", "{03047414-306F-4231-AA13-F664AEBD5577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clinica", "clinica\clinica.csproj", "{B5962EDF-1789-4683-A002-F338F2182DA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A61B845-8065-4366-99D8-7723697366CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A61B845-8065-4366-99D8-7723697366CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A61B845-8065-4366-99D8-7723697366CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A61B845-8065-4366-99D8-7723697366CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386A06B5-3A82-437C-AE2F-7F0F67406F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386A06B5-3A82-437C-AE2F-7F0F67406F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386A06B5-3A82-437C-AE2F-7F0F67406F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386A06B5-3A82-437C-AE2F-7F0F67406F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03047414-306F-4231-AA13-F664AEBD5577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03047414-306F-4231-AA13-F664AEBD5577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03047414-306F-4231-AA13-F664AEBD5577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03047414-306F-4231-AA13-F664AEBD5577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5962EDF-1789-4683-A002-F338F2182DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5962EDF-1789-4683-A002-F338F2182DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5962EDF-1789-4683-A002-F338F2182DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5962EDF-1789-4683-A002-F338F2182DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A61B845-8065-4366-99D8-7723697366CF} = {23918C0D-37D8-411A-9089-4B68AE0D9490}
+		{386A06B5-3A82-437C-AE2F-7F0F67406F38} = {5360290B-B77A-4D3C-89ED-FD83141EE97E}
+		{03047414-306F-4231-AA13-F664AEBD5577} = {48E9847F-391A-4B59-B973-4968F47DC83B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
